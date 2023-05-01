@@ -1,0 +1,7 @@
+resposta: *(pulo + 2)
+
+(pulo + 4) e (pulo + 2) são expressões que se referem, respectivamente, aos endereços do quinto e terceiro elementos do vetor, mas não dereferenciam o endereço para 
+obter o valor armazenado lá.
+
+já as expressões *(pulo + 2) e *(pulo + 4) dereferenciam os endereços para obter os valores armazenados neles, sendo a expressão que referencia o valor do terceiro
+elemento do vetor a *(pulo + 2).
