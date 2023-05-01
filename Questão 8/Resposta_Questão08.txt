@@ -1,0 +1,5 @@
+Primeiro programa: é declarado um vetor de inteiros vet, com valores iniciais 4, 9, 13. Então, usa-se um loop para percorrer e imprimir, na base decimal,
+o valor de cada elemento do vetor. É utilizado a notação de ponteiros para percorrer o vetor.
+
+Segundo programa: é declarado um vetor de inteiros vet, com valores iniciais 4, 9, 13. Então, usa-se um loop para percorrer e imprimir, na base hexadecimal, 
+o endereço de cada elemento do vetor.
