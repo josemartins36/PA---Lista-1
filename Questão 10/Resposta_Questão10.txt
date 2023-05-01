@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main() {
+    char x_char[4];
+    int x_int[4];
+    float x_float[4];
+    double x_double[4];
+
+// usei %d para representar em decimal para facilitar a visualização do padrão do pulo, mas geralmente o endereço é em hexadecimal.
+
+    printf("Endereço do x_char: %d\n", x_char);
+    printf("x_char+1: %d\n", x_char+1);
+    printf("x_char+2: %d\n", x_char+2);
+    printf("x_char+3: %d\n", x_char+3);
+
+    printf("\nEndereço do x_int: %d\n", x_int);
+    printf("x_int+1: %d\n", x_int+1);
+    printf("x_int+2: %d\n", x_int+2);
+    printf("x_int+3: %d\n", x_int+3);
+
+    printf("\nEndereço do x_float: %d\n", x_float);
+    printf("x_float+1: %d\n", x_float+1);
+    printf("x_float+2: %d\n", x_float+2);
+    printf("x_float+3: %d\n", x_float+3);
+
+    printf("\nEndereço do x_double: %d\n", x_double);
+    printf("x_double+1: %d\n", x_double+1);
+    printf("x_double+2: %d\n", x_double+2);
+    printf("x_double+3: %d\n", x_double+3);
+
+    return 0;
+}
+
+valores obtidos pelo programa:
+// perceba o pulo de 1 em 1, como o previsto na questão anterior.
+Endereço de x_char: 6422300
+x_char+1: 6422301
+x_char+2: 6422302
+x_char+3: 6422303
+
+// perceba o pulo de 4 em 4, significando que na minha máquina o int é composto por até 4 bytes no lugar de 2, como suposto na questão anterior.
+Endereço de x_int: 6422284
+x_int+1: 6422288
+x_int+2: 6422292
+x_int+3: 6422296
+
+// perceba o pulo de 4 em 4, como o previsto na questão anterior.
+Endereço de x_float: 6422268
+x_float+1: 6422272
+x_float+2: 6422276
+x_float+3: 6422280
+
+// perceba o pulo de 8 em 8, como o previsto na questão anterior.
+Endereço de x_double: 6422232
+x_double+1: 6422240
+x_double+2: 6422248
+x_double+3: 6422256
+
