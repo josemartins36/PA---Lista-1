@@ -1,0 +1,11 @@
+*i e j são variáveis inteiras*
+*p e q ponteiros para int*
+
+p = i; => ilegal => está sendo atribuindo uma variável inteira a um ponteiro para inteiro, que são tipos diferentes, uma correção seria => p = &i
+q = &j; => ok
+p = &*&i; => ok
+i = (*&)j; => ilegal => invalido, uma correção seria => i = *&j
+i = *&j; => ok
+i = *&*&j; => ok
+q = *p; => ilegal = > q é ponteiro, então deve receber um endereço
+i = (*p)++ + *q; => ok
