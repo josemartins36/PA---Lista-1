@@ -1,0 +1,8 @@
+p = mat + 1 é válida, pois o nome do array é um ponteiro para o primeiro elemento dele, assim p recebe o endereço do primeiro elemento do array incrementado em 1,
+ou seja, p recebe o endereço do segundo elemento do mat.
+
+p = mat++ é invalida, pois a expressão busca incrementar o ponteiro mat, que é uma variável array. as operações de incremento só são permitidas em variáveis ponteiro.
+
+p = ++mat é invalida, pelo motivo anterior.
+
+x = (*mat)++ é válida, é atribuido a x o valor do primeiro elemento do array e em seguida esse valor é incrementado em 1.
