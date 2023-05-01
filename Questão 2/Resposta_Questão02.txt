@@ -1,0 +1,10 @@
+ *Supondo que i ocupe o endereço 4094 na memória*
+ *o ponteiro p aponta para o endereço de i, ou seja 4094*
+ 
+ %x -> representação em hexadecimal do valor -> 4094 em hexadecimal = ffe
+ %d -> representação em decimal -> *p + 2 = 5 + 2 = 7
+ %d -> representação em decimal -> **&p = 5
+ %d -> representação em decimal -> 3**p = 3 * 5 = 15
+ %d -> representação em decimal -> **&p + 4 = 5 + 4 = 9
+ 
+ Portanto, o programa imprimirá: ffe 7 5 15 9
