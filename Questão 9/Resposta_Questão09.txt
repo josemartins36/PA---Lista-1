@@ -1,0 +1,9 @@
+*x[0] está no endereço 4092*
+
+x como char (1 byte): x+1 = 4093; x+2 = 4094; x+3 = 4095 
+
+x como int (2 byte): x+1 = 4094; x+2 = 4096; x+3 = 4098 
+
+x como float (4 byte): x+1 = 4096; x+2 = 4100; x+3 = 4104 
+
+x como double (8 byte): x+1 = 4100; x+2 = 4108; x+3 = 4116 
