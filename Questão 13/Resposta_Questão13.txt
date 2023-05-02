@@ -19,7 +19,7 @@ int main() {
     int n, i;
     float *valores;
     
-    // ler n valores
+    // ler n (número de valores)
     printf("Digite o número de valores: ");
     scanf("%d", &n);
 
