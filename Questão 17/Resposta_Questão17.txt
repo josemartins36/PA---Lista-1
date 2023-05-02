@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void soma_vetores(int *vet1, int *vet2, int *resultado, int tamanho) {
+    int i;
+    for (i = 0; i < tamanho; i++) {
+        resultado[i] = vet1[i] + vet2[i];
+    }
+}
+
+int main() {
+    int n, i;
+    int *vet1, *vet2, *resultado;
+    
+    // ler tamanho dos vetores
+    printf("Digite o tamanho dos vetores: ");
+    scanf("%d", &n);
+    
+    // alocação dinâmica de memória
+    vet1 = (int *)malloc(n * sizeof(int)); 
+    vet2 = (int *)malloc(n * sizeof(int));
+    // resultado vai ser o vetor resultante da soma
+    resultado = (int *)malloc(n * sizeof(int));
+
+    // ler elementos do primeiro vetor
+    printf("Digite os elementos do primeiro vetor:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &vet1[i]);
+    }
+
+    // ler elementos do segundo vetor
+    printf("Digite os elementos do segundo vetor:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &vet2[i]);
+    }
+    
+    // somar elemento com elemento dos vetores; resultado é o vetor resultante
+    soma_vetores(vet1, vet2, resultado, n);
+
+    // printa os elementos do vetor resultante da soma
+    printf("Resultado da soma dos vetores:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d ", resultado[i]);
+    }
+    printf("\n");
+    
+    // libera a memória
+    free(vet1); 
+    free(vet2);
+    free(resultado);
+    
+    return 0;
+}
+
+Exemplo do programa:
+Digite o tamanho dos vetores: 3
+Digite os elementos do primeiro vetor:
+1
+9
+17
+Digite os elementos do segundo vetor:
+5
+4
+1
+Resultado da soma dos vetores:
+6 13 18 
