@@ -1,4 +1,42 @@
-(a) -> p1 receberá o endereço da variável valor, em seguida atribui-se a esse endereço o número 20, por fim printa-se em decimal o conteúdo de valor. Espera-se que
-seja printado 20.
+(a) -> p1 receberá o endereço da variável valor, em seguida atribui-se a esse endereço o número 20, por fim printa-se em decimal o conteúdo da variável valor. Espera-se que seja printado "20".
 
-(b) -> p2 receberá o endereço da variável temp, em seguida atribui-se a esse endereço o número 29.0, por fim printa-se em  
+(b) -> p2 receberá o endereço da variável temp, em seguida atribui-se a esse endereço o número 29.0, por fim printa-se com representação de 1 casa decimal o conteúdo da variável temp. Espera-se que seja printado "29.0".
+
+(c) -> p3 receberá o endereço do primeiro elemento da string "Ponteiros", em seguida atribui-se à variavel aux o conteúdo desse endereço, ou seja, a letra "P". Por fim, printa-se com representação ASCII o conteúdo da variável aux. Espera-se que seja printado "P".
+
+(d) -> p3 receberá o endereço do quinto elemento da string "Ponteiros", em seguida atribui-se à variável aux o conteúdo desse endereço, ou seja, a letra "e". Por fim, printa-se com representação ASCII o conteúdo da variável aux. Espera-se que seja printado "e".
+
+(e) -> mesma resposta da (c), pois as atribuições p3 = &nome[0] e p3 = nome são equivalentes. A diferença é que é printado com representação ASCII o conteúdo do ponteiro p3, sem a necessidade da variável aux.
+
+(f) -> p3 receberá o endereço anterior + 4, ou seja, &nome[0] + 4, que corresponderá ao endereço do quinto elemento da string "Ponteiros", "e". Por fim, printa-se com representação ASCII o conteúdo do ponteiro p3. Espera-se que seja printado "e".
+
+(g) -> p3 será decrementado em 1, ou seja, &nome[4] - 1, que corresponderá ao endereço do quarto elemento da string "Ponteiros", "t". Por fim, printa-se com representação ASCII o conteúdo do ponteiro p3. Espera-se que seja printado "t".
+
+(h) -> atribui-se ao primeiro, segundo e terceiro elemento do vetor vetor[3], respectivamente, os números 31, 45 e 27, em seguida atribui-se ao ponteiro p4 o endereço do primeiro elemento do vetor vetor[3], ou seja, o endereço de vetor[0]. Então a variável idade recebe o conteúdo do ponteiro p4, ou seja, o número 31. Por fim, printa-se em decimal o conteúdo da variável idade. Espera-se que seja printado "31".
+
+(i) -> o ponteiro p5 recebe p4 + 1, ou seja, o último endereço do ponteiro p4 (&vetor[0] + 1), que é o equivalente ao endereço do vetor[1]. Em seguida, a variável idade recebe o conteúdo de p5 (conteúdo de vetor[1] = 45). Por fim, printa-se em decimal o conteúdo da variável idade. Espera-se que seja printado "45".
+
+(j) -> o ponteiro p4 recebe p5 + 1, ou seja, o último endereço do ponteiro p5 (&vetor[1] + 1), que é o equivalente ao endereço do vetor[2]. Em seguida, a variável idade recebe o conteúdo de p4 (conteúdo de vetor[2] = 27). Por fim, printa-se em decimal o conteúdo da variável idade. Espera-se que seja printado "27".
+
+(l) -> o ponteiro p4 será decrementado em 2, ou seja, o último endereço do ponteiro p4 (&vetor[2] - 2), que é o equivalente ao endereço do vetor[0]. Em seguida, a variável idade recebe o conteúdo de p4 (conteúdo de vetor[0] = 31). Por fim, printa-se em decimal o conteúdo da variável idade. Espera-se que seja printado "31".
+
+(m) -> o ponteiro p5 receberá o endereço de vetor[2] - 1, ou seja, o endereço de vetor[1]. Em seguida, printa-se em decimal o conteúdo de p5, que é vetor[1] = 45. Espera-se que seja printado "45".
+
+(n) -> o ponteiro p5 será incrementado em 1, ou seja, &vetor[1] + 1 = &vetor[2]. Em seguida, printa-se em decimal o conteúdo de p5, que é vetor[2] = 27. Espera-se que seja printado "27".
+
+A seguir, as respostas obtidas após compilar e executar o programa:
+20 
+29.0 
+P 
+e 
+P 
+e 
+t 
+31 
+45 
+27 
+31 
+45 
+27 
+
+Percebe-se que foi como o esperado.
