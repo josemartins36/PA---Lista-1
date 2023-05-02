@@ -1,0 +1,4 @@
+(a) -> p1 receberá o endereço da variável valor, em seguida atribui-se a esse endereço o número 20, por fim printa-se em decimal o conteúdo de valor. Espera-se que
+seja printado 20.
+
+(b) -> p2 receberá o endereço da variável temp, em seguida atribui-se a esse endereço o número 29.0, por fim printa-se em  
