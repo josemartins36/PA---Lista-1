@@ -18,6 +18,7 @@ void ordena_crescente(float *valores, int n) {
 int main() {
     int n, i;
     float *valores;
+    
     // ler n valores
     printf("Digite o número de valores: ");
     scanf("%d", &n);
@@ -30,6 +31,7 @@ int main() {
     for (i = 0; i < n; i++) {
         scanf("%f", &valores[i]);
     }
+    
     // ordena esses valores em ordem crescente
     ordena_crescente(valores, n);
 
@@ -37,6 +39,7 @@ int main() {
     for (i = 0; i < n; i++) {
         printf("%.2f\n", valores[i]);
     }
+    
     // libera a memória
     free(valores); 
     return 0;
