@@ -1,0 +1,8 @@
+aloha[2] = value; -> válido
+scanf("%f", &aloha); -> inválido, a função scanf() não aceita um array inteiro como argumento
+aloha = value; -: inválido, não é possível atribuir um float para um array
+printf("%f", aloha); -> inválido, não é possível imprimir um array inteiro com o print(f)
+coisas[4][4] = aloha[3]; -> válido
+coisas[5] = aloha; -> inválido, não é possível atribuir um array de float a uma matriz multidimensional
+pf = value; -> inválido, não é possível atribuir um valor tipo float para um ponteiro de tipo float
+pf = aloha; -> válido
