@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 // Função de comparação para ser utilizada com a qsort()
-int cmpfunc(const void *a, const void *b) {
+int comparar(const void *a, const void *b) {
    return (*(float*)a - *(float*)b);
 }
 
@@ -24,11 +24,12 @@ int main() {
     }
     
     // ordenação dos valores com qsort()
-    qsort(valores, n, sizeof(float), cmpfunc); 
+    qsort(valores, n, sizeof(float), comparar); 
 
     // printar os valores, já ordenados
     printf("Valores em ordem crescente:\n");
     for (i = 0; i < n; i++) {
+        // %.2f limita o print em 2 casas decimais
         printf("%.2f\n", valores[i]);
     }
     
