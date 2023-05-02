@@ -1,0 +1,19 @@
+Um ponteiro p/ função é um ponteiro que aponta para um endereço de memória onde está salvo uma função. Uma implementação simples de tal uso para ponteiro é a seguinte
+implementação de uma função soma, a qual recebe 2 inteiros e um ponteiro e retorna o resultado.
+
+#include <stdio.h>
+
+int soma(int a, int b, int (*funcao_soma)(int,int)){
+    return funcao_soma(a, b);
+}
+
+int soma_inteiros(int a, int b){
+    return a + b;
+}
+
+int main(){
+    int a = 5, b = 3;
+    int (*ponteiro_soma)(int,int) = soma_inteiros;
+    printf("%d + %d = %d\n", a, b, soma(a, b, ponteiro_soma));
+    return 0;
+}
