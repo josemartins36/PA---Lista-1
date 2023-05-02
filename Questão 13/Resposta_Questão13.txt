@@ -35,6 +35,7 @@ int main() {
     // ordena esses valores em ordem crescente
     ordena_crescente(valores, n);
 
+    // printar os valores, já ordenados
     printf("Valores em ordem crescente:\n");
     for (i = 0; i < n; i++) {
         printf("%.2f\n", valores[i]);
