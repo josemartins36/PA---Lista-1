@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Função de comparação para ser utilizada com a qsort()
+// função de comparação para ser utilizada com a qsort()
 int comparar(const void *a, const void *b) {
    return (*(float*)a - *(float*)b);
 }
