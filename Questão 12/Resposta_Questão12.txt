@@ -12,10 +12,11 @@ int soma_inteiros(int a, int b){
 }
 
 int main(){
-    int a = 5, b = 3;
+    int a = 1, b = 2;
     int (*ponteiro_soma)(int,int) = soma_inteiros;
     printf("%d + %d = %d\n", a, b, soma(a, b, ponteiro_soma));
     return 0;
 }
+// a saída do programa é 1 + 2 = 3
 
 Perceba que na função main é criado um ponteiro para a função soma_inteiros, o qual é passado como argumento para a função soma.
