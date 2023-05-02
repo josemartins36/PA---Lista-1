@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void ordena_crescente(float *valores, int n) {
+    float temp;
+    int i, j;
+    for (i = 0; i < n; i++) {
+        for (j = i + 1; j < n; j++) {
+            if (valores[i] > valores[j]) {
+                temp = valores[i];
+                valores[i] = valores[j];
+                valores[j] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    int n, i;
+    float *valores;
+    // ler n valores
+    printf("Digite o número de valores: ");
+    scanf("%d", &n);
+
+    // alocação dinâmica de memória
+    valores = (float *)malloc(n * sizeof(float)); 
+
+    // ler os n valores
+    printf("Digite os valores:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%f", &valores[i]);
+    }
+    // ordena esses valores em ordem crescente
+    ordena_crescente(valores, n);
+
+    printf("Valores em ordem crescente:\n");
+    for (i = 0; i < n; i++) {
+        printf("%.2f\n", valores[i]);
+    }
+    // libera a memória
+    free(valores); 
+    return 0;
+}
+
+alguns testes do programa: 
+
+Digite o número de valores: 3
+Digite os valores:
+9.7
+3.1
+2.8
+Valores em ordem crescente:
+2.80
+3.10
+9.70
+
+Digite o número de valores: 3
+Digite os valores:
+5
+0
+7
+Valores em ordem crescente:
+0.00
+5.00
+7.00
+
+como o esperado, os valores foram ordenados em ordem crescente.
