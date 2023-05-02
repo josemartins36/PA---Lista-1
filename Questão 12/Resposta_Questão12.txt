@@ -17,3 +17,5 @@ int main(){
     printf("%d + %d = %d\n", a, b, soma(a, b, ponteiro_soma));
     return 0;
 }
+
+Perceba que na função main é criado um ponteiro para a função soma_inteiros, o qual é passado como argumento para a função soma.
